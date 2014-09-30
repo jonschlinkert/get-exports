@@ -1,0 +1,46 @@
+{
+  "name": "get-exports",
+  "description": "CLI for getting/creating a list of node.js export statements for functions in a module. Why? I want to write pure JavaScript and not worry about remembering to add export statements until js-hint complains about it.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/get-exports",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/get-exports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/get-exports/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/get-exports/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "exp": "./cli.js"
+  },
+  "devDependencies": {
+    "verb-tag-jscomments": ">= 0.2.0",
+    "verb": ">= 0.2.6",
+    "mocha": "*"
+  },
+  "keywords": [],
+  "dependencies": {
+    "builtins": "0.0.7",
+    "code-context": "^0.2.3",
+    "minimist": "^1.1.0",
+    "verbalize": "^0.1.2"
+  }
+}
